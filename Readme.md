@@ -104,5 +104,5 @@ def evaluate_variance(X, y, num_iterations, test_size, textEncoder, modelType, r
 <p>Overall the best performance was achieved using a combination of CountVectorizer for text encoding and MultinomialNB </p>
 
 ### Deployment
-<p> Another change to this project is that a simple webapp was created to demonstrate the deployment of such a model. As such at the end of this Jupyter notebook, pickle was used to dump the finetuned model to a file. This file was then used to build an online webapp using the model to predict if entered text is SPAM. You can find the website [here](http://roadlesswalked.pythonanywhere.com/), please feel free to try it out. </p>
+<p> Another change to this project is that a simple webapp was created to demonstrate the deployment of such a model. As such at the end of this Jupyter notebook, pickle was used to dump the finetuned model to a file. This file was then used to build an online webapp using the model to predict if entered text is SPAM. You can find the website at the following link -> (http://roadlesswalked.pythonanywhere.com/). Please feel free to try it out. </p>
 
