@@ -5,13 +5,15 @@
 ### Project Goals
 <p> The goal of the notebook being followed is to classify newsgroup text into a number of categories representing the newsgroup from which the text was retrieved. A sample of these categories.</p>
 <br>
+
 ![Categories](Images/categoryImage.png)
 
 <br>
 <g> The goal of this project has been changed to the binary classification of a string of text taken from a number of SMS messages into either Spam or not Spam classes. This project will attempt to use Naive Bayes machine learning techniques to make these classifications.
 
 ### Data Source
-<p> The first change from the source notebook is that the notebook retrieves the data it uses for its predictions from included datasets within the sklearn platform. This project instead sources its data from kaggle using the SMS Spam Collection Dataset from [this address](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).</p>
+<p> The first change from the source notebook is that the notebook retrieves the data it uses for its predictions from included datasets within the sklearn platform. This project instead sources its data from kaggle using the SMS Spam Collection Dataset from the following address -> (https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).
+.</p>
 <p> This dataset contains a string of text representing a SMS and a label either 'ham' to label non-spam messages or 'spam' to label spam messages. It contains 5,574 messages in total</p> 
 
 ### Data Preprocessing
@@ -19,6 +21,7 @@
 
 #### Checking for null values
 <p> Some checks are made to ensure that the data is clean and there are no null values in the dataset. This check showed that there are none </p>
+
 ```
 df[df.isnull().any(axis=1)].count()
 ```
