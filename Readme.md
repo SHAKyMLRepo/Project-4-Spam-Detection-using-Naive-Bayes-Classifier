@@ -1,16 +1,22 @@
 # ChangeLog
 
 ## Changes
-Can find notebook at the following link:<br> https://colab.research.google.com/drive/1-z2FgsH9BkNQTK1XsxBYCmLFVL2eCqEp?usp=drive_link
+
+### Collab Notebook
+If you wish to experiment with the code, you can find the notebook on Google Collab at the following link:<br> https://colab.research.google.com/drive/1-z2FgsH9BkNQTK1XsxBYCmLFVL2eCqEp?usp=drive_link
 
 ### Project Goals
-<p> The goal of the notebook being followed is to classify newsgroup text into a number of categories representing the newsgroup from which the text was retrieved. A sample of these categories.</p>
+<p> This project was inspired by a notebook explaining the basis of Naive Bayes machine learning techniques. The goal of the notebook being followed is to classify newsgroup text into a number of categories representing the newsgroup from which the text was retrieved. A sample of these categories.</p>
 <br>
 
 ![Categories](Images/categoryImage.png)
 
 <br>
-<g> The goal of this project has been changed to the binary classification of a string of text taken from a number of SMS messages into either Spam or not Spam classes. This project will attempt to use Naive Bayes machine learning techniques to make these classifications.
+If you wish to view that notebook if can be found at the following link: https://github.com/jakevdp/PythonDataScienceHandbook/blob/8a34a4f653bdbdc01415a94dc20d4e9b97438965/notebooks/05.05-Naive-Bayes.ipynb .
+<br>
+
+
+The goal of this adapted project has been changed to the binary classification of a string of text taken from a number of SMS messages into either Spam or not Spam classes. This project will attempt to use Naive Bayes machine learning techniques to make these classifications.
 
 ### Data Source
 <p> The first change from the source notebook is that the notebook retrieves the data it uses for its predictions from included datasets within the sklearn platform. This project instead sources its data from kaggle using the SMS Spam Collection Dataset from the following address: (https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) .
