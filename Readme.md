@@ -129,7 +129,26 @@ def evaluate_variance(X, y, num_iterations, test_size, textEncoder, modelType, r
 <p> Another change to this project is that a simple webapp was created to demonstrate the deployment of such a model. As such at the end of this Jupyter notebook, pickle was used to dump the finetuned model to a file with the following code.
     
 ```
+# Use pickle to dump model
+import pickle
+# Save the pipeline model as a pickle file
+with open('model.pkl', 'wb') as model_file:
+    pickle.dump(model, model_file)
 ```
 
-This file was then used to build an online webapp using the model to predict if entered text is SPAM. You can find at the following website (http://roadlesswalked.pythonanywhere.com/), please feel free to try it out. </p>
+This file was then used to build an online webapp using the model to predict if entered text is SPAM. The code for this webapp is included in the repository if you wish to find the implementation details. If you want to just test out the webapp itself, you can find the resulting deployed application at the following website (http://roadlesswalked.pythonanywhere.com/), please feel free to try it out. </p>
+
+### Learning Outcomes
+The completion of this project illustrated a number learning points for machine learning tasks and the Naive Bayes technique in particular:
+1. **Types of Naive Bayes**: Understanding the distinctions between Multinomial, Gaussian, and Bernoulli Naive Bayes classifiers. Multinomial Naive Bayes is suitable for features with discrete counts (e.g., word counts in text classification), while Bernoulli Naive Bayes is appropriate for binary feature vectors (e.g., presence or absence of words in text).
+
+2. **Testing Variance across training data splits**: Developing a function to evaluate the variance in model performance across different subsets of training data splits. This helps in assessing the stability and reliability of the model across various data configurations and can provide insights into the robustness of the model.
+
+3. **Text Encoding techniques**: Exploring various methods for encoding text data, including CountVectoriser and TF-IDF. CountVectoriser converts text into a matrix of frequency counts, while TF-IDF assigns weights to terms based on their frequency both in the document and also across all inputs. Experimentation with different encoding techniques allows for the identification of the most effective approach for a particular classification task. In this case, CountVectoriser performed the best.
+
+4. **Determining Factors for Spam in this Project**: 
+For this project, the model evaluation revealed the following about the classification of spam from this training data:
+  - Punctuation proves to be a determinant for distinguishing spam from non-spam messages.
+  - The impact of word frequency on accuracy while deterministic was found to be less importance than I would have guessed at the start of this task.
+  - Assigning weights based on word rarity across the lexicon may not necessarily enhance model accuracy, suggesting that the frequency of words in the a single message play a more significant role in spam detection within this training data.
 
