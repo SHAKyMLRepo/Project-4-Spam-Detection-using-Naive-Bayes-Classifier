@@ -142,7 +142,7 @@ This file was then used to build an online webapp using the model to predict if 
 The completion of this project illustrated a number learning points for machine learning tasks and the Naive Bayes technique in particular:
 1. **Types of Naive Bayes**: Understanding the distinctions between Multinomial, Gaussian, and Bernoulli Naive Bayes classifiers. Multinomial Naive Bayes is suitable for features with discrete counts (e.g., word counts in text classification), while Bernoulli Naive Bayes is appropriate for binary feature vectors (e.g., presence or absence of words in text).
 
-2. **Testing Variance across training data splits**: Developing a function to evaluate the variance in model performance across different subsets of training data splits. This helps in assessing the stability and reliability of the model across various data configurations and can provide insights into the robustness of the model.
+2. **Testing Variance across training data splits**: The development of a function to evaluate the variance in model performance across different subsets of training data splits helped in assessing the stability and reliability of the model across various data configurations and was useful in providing insights into the robustness of the model.
 
 3. **Text Encoding techniques**: Exploring various methods for encoding text data, including CountVectoriser and TF-IDF. CountVectoriser converts text into a matrix of frequency counts, while TF-IDF assigns weights to terms based on their frequency both in the document and also across all inputs. Experimentation with different encoding techniques allows for the identification of the most effective approach for a particular classification task. In this case, CountVectoriser performed the best.
 
