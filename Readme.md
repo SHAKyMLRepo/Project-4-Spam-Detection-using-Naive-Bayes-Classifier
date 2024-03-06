@@ -3,8 +3,9 @@
 ## Changes
 
 ### Collab Notebook
-If you wish to experiment with the code, you can find the notebook on Google Collab at the following link:<br> https://colab.research.google.com/drive/1-z2FgsH9BkNQTK1XsxBYCmLFVL2eCqEp?usp=drive_link
-
+If you wish to experiment with the code, you can find the notebook on Google Collab at the link below.<br> 
+[Collab Notebook - Spam Detection](https://colab.research.google.com/drive/1TCBJv__WFIy80_jBQQWCfklHgFmN3LZ2?usp=drive_link)
+<br>
 ### Project Goals
 <p> This project was inspired by a notebook explaining the basis of Naive Bayes machine learning techniques. The goal of the notebook being followed is to classify newsgroup text into a number of categories representing the newsgroup from which the text was retrieved. A sample of these categories.</p>
 <br>
